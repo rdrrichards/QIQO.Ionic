@@ -6,4 +6,37 @@
   </ion-toolbar>
 </ion-header>
 
-<ion-content></ion-content>
+<ion-content padding>
+  <div *ngIf="!page">Loading products...</div>
+  <div *ngIf="page">
+    <div class="panel panel-primary">
+      <div class="panel-body">
+        <div class="row">
+          <table class="table">
+            <thead>
+              <tr>
+                <!--<td>Key</td>-->
+                <td>Code</td>
+                <td>Name</td>
+                <!--<td>Product Decription</td>-->
+                <td>Type</td>
+                <td>Price</td>
+              </tr>
+            </thead>
+            <tbody>
+              <tr *ngFor="let product of page.results" item-height="30">
+                <!--<td><a [routerLink]="['/products', product.productKey]" href="">{{product.productKey}}</a></td>-->
+                <td>{{ product.productCode }}</td>
+                <td>{{ product.productName }}</td>
+                <!--<td>{{ product.productDesc }}</td>-->
+                <td>{{ product.productType }}</td>
+                <td>{{ product.productBasePrice | currency }}</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--<p>Look forward to more...</p>-->
+</ion-content>
