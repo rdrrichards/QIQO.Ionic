@@ -1,4 +1,5 @@
 import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
+import { HttpClientTestingModule } from '@angular/common/http/testing';
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { Tab3Page } from './tab3.page';
@@ -10,6 +11,7 @@ describe('Tab3Page', () => {
   beforeEach(async(() => {
     TestBed.configureTestingModule({
       declarations: [Tab3Page],
+      imports: [ HttpClientTestingModule ],
       schemas: [CUSTOM_ELEMENTS_SCHEMA],
     }).compileComponents();
   }));
