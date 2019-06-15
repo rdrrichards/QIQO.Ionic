@@ -1,7 +1,7 @@
+CALL git commit -am "pre update commit"
 CALL ng update @angular/cli
+CALL git commit -am "cli update to latest"
 CALL ng update @angular/core
-REM CALL ng update @angular-devkit/build-angular
-REM CALL ng update @angular-devkit/architect
-REM CALL ng update @angular-devkit/core
-REM CALL ng update @angular-devkit/schematics
+CALL git commit -am "ng update to latest"
 CALL npm audit fix
+CALL build-test.bat
