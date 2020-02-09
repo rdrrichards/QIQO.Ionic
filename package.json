@@ -1,8 +1,9 @@
 {
   "name": "qiqo-ionic",
-  "version": "0.0.1",
-  "author": "Ionic Framework",
-  "homepage": "https://ionicframework.com/",
+  "version": "0.0.2",
+  "author": "Richard Richards",
+  "description": "QIQO Ionic project",
+  "homepage": "https://github.com/rdrrichards/QIQO.Ionic",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
@@ -53,6 +54,5 @@
     "ts-node": "~8.6.2",
     "tslint": "~5.20.1",
     "typescript": "~3.7.5"
-  },
-  "description": "QIQO Ionic project"
+  }
 }
